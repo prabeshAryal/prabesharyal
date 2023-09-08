@@ -28,6 +28,7 @@ I'm an enthusiastic full-stack developer with a diverse skill set, well-versed i
 
 ## 🚀 Language & Framework Expertise
 
+<br/>
 <div align="center">
     <img src="https://img.shields.io/badge/Python-Advanced-informational?style=flat&logo=python&logoColor=white&color=3776AB" alt="Python">
     <img src="https://img.shields.io/badge/C-Proficient-informational?style=flat&logo=c&logoColor=white&color=A8B9CC" alt="C">
@@ -46,7 +47,7 @@ I'm an enthusiastic full-stack developer with a diverse skill set, well-versed i
     <img src="https://img.shields.io/badge/D3.js-Intermediate-informational?style=flat&logo=d3.js&logoColor=white&color=F9A03C" alt="D3.js">
 </div>
 
-<br>
+<br/>
 <p align="center">
     <a href="https://github-readme-streak-stats.herokuapp.com/?user=prabesharyal&theme=black-ice&hide_border=true&stroke=0000&background=060A0CD0">
         <img title="🔥 Get streak stats for your profile" alt="Prabesh's streak" src="https://github-readme-streak-stats.herokuapp.com/?user=prabesharyal&theme=black-ice&hide_border=true&stroke=0000&background=060A0CD0"/>
@@ -67,6 +68,7 @@ I'm an enthusiastic full-stack developer with a diverse skill set, well-versed i
 
 ## 🏆 Certifications & Learning
 
+<br/>
 ### Self-Taught Expertise
 - **Python:** Advanced proficiency (Utilizing a variety of libraries including Regex, Selenium, Django)
 
