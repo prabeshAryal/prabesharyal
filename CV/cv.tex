@@ -1,96 +1,131 @@
-%!TEX TS-program = xelatex
-\documentclass[a4paper, extended]{comcv}
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=0.5in, right=0.5in, top=0.7in, bottom=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref} % for hyperlinks
+\usepackage{xcolor} % for colors
+\usepackage{lipsum} % for dummy text
+\usepackage{fancyhdr} % for page headers
+\usepackage{multicol} % for two-column layout
+\pagestyle{fancy}
 
-\usepackage[english]{babel}
+\definecolor{techblue}{RGB}{0,102,204} % Techy Blue
 
-\title{Avinal's CV}
-\fullname{Avinal}{Kumar}{}
-\cvtitle{Student, Programmer, Technical Writer, Open Source Developer}
-\website{https://avinal.is-a.dev}{avinal.is-a.dev}
-\email{185067@nith.ac.in}
-\github{https://github.com/avinal}{GitHub}
-\linkedin{https://www.linkedin.com/in/avinal}{LinkedIn}
-\currentdate{Jan 2021}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=techblue,
+    urlcolor=techblue,
+}
+
+\renewcommand{\headrulewidth}{0pt} % Remove header line
+
+\setlist{nosep}
+
+% Set top and bottom margins to be the same
+\geometry{top=0.7in, bottom=0.7in}
 
 \begin{document}
-\section{Experience}
-\combosection{Script Winter of Code}{Participant \href{https://github.com/harshcasper/rotten-scripts}{Rotten-Scripts}}{Dec 2020-Present}{
-  \begin{tightlist}
-    \item Proposed new sections for PowerShell Scripts
-    \item Proposed and created structure of website for the project
-    \item Added Automatic Pull Request Assigning Action
-  \end{tightlist}
-}
+\title{\LARGE\textbf{Prabesh Aryal}\\ \href{https://prabesharyal.info.np}{\footnotesize https://prabesharyal.info.np}}
+\date{}
+\maketitle
+\thispagestyle{empty} % Remove page number on this page
 
-\combosection{Google Season of Docs 2020}{Technical Writer, VideoLAN}{Sep 2020-Nov 2020}{
-  \begin{tightlist}
-    \item Created \href{https://code.videolan.org/docs/vlc-android-user}{VLC for Android User Documentation}
-    \item Proposed a new structure for the documentation (Sphinx, reStructuredText)
-    \item Writing user-friendly and well researched content for technical and non-technical users.
-    \item Proper amount and placement of screenshots and other media for appealing and informative docs.
-    \item Optimized web pages for major form factors and ease of navigation
-  \end{tightlist}
-}
+% Add equal vertical space above and below the custom title line
+\vspace{-\baselineskip}
+\vspace{-\baselineskip}
+\vspace{-\baselineskip}
+\vspace{-\baselineskip}
+% Add the custom title line
+\begin{center}
+    \textcolor{techblue}{\rule{1\linewidth}{2pt}}
+\end{center}
+\vspace{\baselineskip}
+% Start two-column layout
+\begin{multicols}{2}
 
-\section{Projects}
-\combosection{\href{https://github.com/avinal/Profile-Readme-Wakatime}{Automated Coding Activity GitHub Action}}{Python, Docker, GitHub Actions, Bash Scripting}{}{
-  \begin{tightlist}
-    \item Automatically generates WakaTime Coding Activity graph that can be embedded in Readme(s) and websites.
-    \item Uses WakaTime API to gather coding activity of last seven days as JSON.
-    \item The data is then processes and converted to a SVG graph using matplotlib
-  \end{tightlist}
-}
+% Rest of your document here...
 
-\combosection{\href{https://github.com/avinal/Binary-Search-Tree-Travarsal}{Binary Search Tree Traversal Animator}}{Java, Gradle, Swing, Multi-threading}{}{
-  \begin{tightlist}
-    \item Creates Binary Search Tree node-by-node and draws the path taken by the traversals.
-    \item Visualizes Inorder, Preorder, Postorder and Levelorder using multi-threading and recursion.
-  \end{tightlist}
-}
+\section*{\textcolor{techblue}{Profile}}
+Student, Full Stack Developer \& Python Programmer
 
-\combosection{\href{https://github.com/avinal/FITS-Image}{Astronomical Image Extraction from FITS File}}{C++, CFITSIO, Boost.GIL, CMake}{}{Flexible Image Transport System has been used for decades to store and transfer astronomical images and needs specialized software to view them, this project extract those images as JPEG or PNG that can be viewed by common image viewer.}
-\vspace{\topsep}
-\combosection{Open Source Contributions}{\href{https://github.com/avinal}{GitHub}, \href{https://code.videolan.org/avinal}{GitLab}}{}{Contributed to organizations: GitHub, Jupyter-XEUS, JetBrains, Embox, VideoLAN}
+\section*{\textcolor{techblue}{Achievements}}
+\begin{itemize}
+    \item Dynamic Full Stack Developer.
+    \item Proficient in Python, JavaScript, and C (Objective).
+    \item Thrives on conquering new challenges.
+\end{itemize}
 
-\vspace{\topsep}
-\section{Skills}
-\combosection{Programming}{}{}{
-  \begin{tightlist}
-    \item Data Structures and Algorithms
-    \item C/C++ (2+ years) - STL, Pointers, Templates, OOP, API development, Boost C++, Qt(basic)
-    \item Java (1+ years) - Collections, Generic Programming, Basic Multi-threading
-    \item Basic - SQL, MATLAB, HTML, CSS, JavaScript, Python
-  \end{tightlist}
-}
+\section*{\textcolor{techblue}{Experience}}
+\begin{itemize}
+    \item Content Creator, Hacker Hero, Aug 2016 - Jul 2022
+    \begin{itemize}
+        \item Video production, editing, and design.
+        \item Proficient in Adobe software.
+    \end{itemize}
+    \item Versatile Python \& Web Developer/Designer, Self(Freelance), Oct 2019 - Present
+    \begin{itemize}
+        \item Developed advanced web applications.
+        \item Created efficient bots using Python and Selenium.
+    \end{itemize}
+    \item Social Media Manager, BEU International Student's Club, March 2023 - June 2023
+    \begin{itemize}
+        \item Handled social medias and made engaging contents.
+        \item Public relations activities.
+    \end{itemize}
+\end{itemize}
 
-\combosection{Tools/Others}{}{}{
-  \begin{tightlist}
-    \item Scripting(Bash, Python), git, GitHub Actions, CI/CD, Linux/Unix, Windows, Windows Subsystem for Linux
-    \item \LaTeX, Visual Studio Code, CLion, IntelliJ IDEA, Vim, Visual Studio, Word, PowerPoint, Excel
-  \end{tightlist}
-}
+\section*{\textcolor{techblue}{Certifications}}
+\begin{itemize}
+    \item HTML, \href{https://www.sololearn.com/certificates/CT-FEALLKTT}{Sololearn}, 2019 
+    \item Python Core, \href{https://www.sololearn.com/certificates/CT-QI3CPNPE}{Sololearn}, 2022 
+    \item Become a C Master,  \href{https://programiz.pro/certificates/detail/021FB2F8FA21}{Programiz}, 2023
+    \item Java, \href{https://www.sololearn.com/certificates/CT-VGCGTY4D}{(Sololearn)}, 2023 
+    \item Full Stack Certification,  \href{https://www.freecodecamp.org/certification/prabesharyal/full-stack}{freeCodeCamp}, 2023
+    \item Writing, Running, and Fixing Code in C, \href{https://coursera.org/share/ede0dc6f56168118d55d965a3d8f1f0e}{Duke University}, 2023 
+\end{itemize}
 
-\section{Education}
-\combosection{National Institute of Technology, Hamirpur}{B.Tech in Computer Sci. and Eng.}{2018-Present}{CGPA till 5\textsuperscript{th} semester - 8.39
+\section*{\textcolor{techblue}{Projects}}
+\begin{itemize}
+    \item \href{https://github.com/prabesharyal/ig_dlp}{Instagram Downloader}
+    \begin{itemize}
+        \item Download Instagram content using Python.
+    \end{itemize}
+    \item \href{https://www.freecodecamp.org/prabesharyal}{Collection of 20+ Full Stack Projects }
+    \begin{itemize}
+        \item Mastery of various languages and frameworks.
+    \end{itemize}
+\end{itemize}
 
-  \ifextended
-    Courses - Advanced Calculus, Statistics, Probability and Queuing Theory, Algorithm Design, Digital Logic Design, Database Management Systems, Data Structures, Operating Systems, Compiler Design, Computer Networks
-  \else
-  \fi
-  }
+\section*{\textcolor{techblue}{Education}}
+\begin{itemize}
+    \item Bachelors in Computer Engineering, Baku Engineering University, Sep 2022 - Present
+    \item High School, Kathmandu Model College, Jul 2019 - Dec 2021
+\end{itemize}
 
-\vspace{\topsep}
-\combosection{The Coding School}{Quantum Computing}{Oct 2020-Present}{Grade 1\textsuperscript{st} semester - 99.32\%
+\section*{\textcolor{techblue}{Languages}}
+\begin{itemize}
+    \item Nepali, English, Hindi \& Azerbaijani
+\end{itemize}
 
-Basic Quantum Mechanics and Quantum Computing}
+\section*{\textcolor{techblue}{Skills}}
+\begin{itemize}
+    \item Programming Languages: Python, JavaScript (including various libraries), C (Objective), Java (Basic)
+    \item Web Development: HTML5, CSS3, React, Redux, Node.js, Express.js, MongoDB, Sass, Bootstrap, Tailwind, jQuery, D3.js, PHP, SQL
+    \item Platforms:  Firebase, Heroku, Render, DigitalOcean, Docker (Basic)
+    \item Operating Systems: Windows, Linux, Android
+    \item Other Skills: Git, GitHub, Bash, Android Studio, Adobe Suite, Microsoft Office
+\end{itemize}
 
-\vspace{\topsep}
-\section{Certifications}
-\combosection{Google IT Support Professional}{Coursera}{2020}{Computer Network, System Administration, Operating System, Cyber Security}
-\vspace{\topsep}
-\section{Others}
-\combosection{Computer Science Engineers' Society}{Coordinator}{2019-Present}{
-  Departmental Society of CSE NITH. Organizes Monthly Competitive Programming Contest and Bootcamp.
-}
+
+
+\section*{\textcolor{techblue}{Online Profiles}}
+\begin{itemize}
+    \item LinkedIn: \textcolor{techblue}{\href{https://www.linkedin.com/in/prabesharyalnp/}{https://www.linkedin.com/in/prabesharyalnp/}}
+    \item GitHub: \textcolor{techblue}{\href{https://github.com/prabesharyal}{https://github.com/prabesharyal}}
+    \item Twitter(X): \textcolor{techblue}{\href{https://x.com/PrabeshAryalNP}{https://x.com/PrabeshAryalNP}}
+    \item Telegram: \textcolor{techblue}{\href{https://t.me/PrabeshAryalNP}{https://t.me/PrabeshAryalNP}}
+
+\end{itemize}
+
+\end{multicols}
 
 \end{document}
