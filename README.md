@@ -72,7 +72,7 @@ I'm an enthusiastic full-stack developer with a diverse skill set, well-versed i
 ### Self-Taught Expertise
 - **Python:** Advanced proficiency (Utilizing a variety of libraries including Regex, Selenium, Django)
 
-### [Univeristy](https://beu.edu.az/en) and [Coursera](https://coursera.org/share/ada58a8c20bba36e1a3ede0ab3b29acf)
+### [Univeristy](https://beu.edu.az/en) and [Coursera]([https://coursera.org/share/ada58a8c20bba36e1a3ede0ab3b29acf](https://www.coursera.org/account/accomplishments/certificate/2LE688QRASLH))
 - **C:** Data Structures, Algorithms, Arrays, and Objects
 
 ### [FreeCodeCamp](https://www.freecodecamp.org/prabesharyal)
