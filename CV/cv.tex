@@ -1,283 +1,96 @@
-\documentclass[letterpaper,11pt]{article}
+%!TEX TS-program = xelatex
+\documentclass[a4paper, extended]{comcv}
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
 \usepackage[english]{babel}
-\usepackage{tabularx}
-\usepackage{xcolor}
-\usepackage{fontawesome5}
 
-\input{glyphtounicode}
+\title{Avinal's CV}
+\fullname{Avinal}{Kumar}{}
+\cvtitle{Student, Programmer, Technical Writer, Open Source Developer}
+\website{https://avinal.is-a.dev}{avinal.is-a.dev}
+\email{185067@nith.ac.in}
+\github{https://github.com/avinal}{GitHub}
+\linkedin{https://www.linkedin.com/in/avinal}{LinkedIn}
+\currentdate{Jan 2021}
 
-% -------------------- FONT OPTIONS --------------------
-% sans-serif
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% serif
-% \usepackage{charter}
-
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-1in} % Default was -.5in
-\addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Section formatting
-\titleformat{\section}{
-  \vspace{-5pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Subsection formatting
-\titleformat{\subsection}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
-
-% -------------------- CUSTOM COMMANDS --------------------
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\setlength{\footskip}{4.08003pt}
-
-% -------------------- START OF DOCUMENT --------------------
 \begin{document}
-
-% -------------------- HEADING--------------------
-\begin{flushright}
-  % \vspace{-4pt}
-  \color{gray}
-  \item
-  Last Updated on \today
-\end{flushright}
-
-\vspace{-5pt}
-
-\begin{center}
-    \textbf{\Huge \scshape Prabesh Aryal} \\ \vspace{8pt}
-    \small 
-    \faIcon{github}
-    \href{https://github.com/prabeshAryal}{\underline{prabeshAryal}} $  $
-    \faIcon{code}
-    \href{https://prabe.sh}
-    {\underline{prabe.sh}} $ $
-    \faIcon{linkedin}
-    \href{https://linkedin.com/in/prabesharyalnp}{\underline{prabesharyalnp}} $ $
-    \faIcon{mobile}
-    \href{tel:+994557015524}
-    {\underline{994-055-701-5524}} $ $
-    \faIcon{envelope}
-      \href{mailto:prabesharyal24@gmail.com}
-    {\underline{prabesharyal24@gmail.com}}
-\end{center}
-
-% -------------------- EDUCATION --------------------
-\section{Education}
-  \resumeSubHeadingListStart
-  
-    \resumeSubheading
-      {Baku Engineering University, \footnotesize{Azerbaijan}}{July 2026}
-      {Bachelors in Computer Engineering}{Current GPA: 89.02/100}
-      
-    \resumeSubheading
-      {Kathmandu Model Secondary School, \footnotesize{Nepal}}{December 2021}
-      {National Examinations Board}{GPA: 3.08/4.0}
-
-%    \vspace{-10pt}
-
-    \subsection{Coursework}
-	\textbf{Courses:} Basics of Computer Engineering, Basics of Programming, Object-Oriented Programming, Data Structures \& Algorithms, Web Systems \& Technologies, Computer Architecture, Discrete Mathematics, Linear Algebra, Differential Equations, Calculus, Circuit Theory, Basics of Electronics, Engineering Economics, Principles of Entrepreneurship \& Introduction to Business, Probability \& Statistics, Physics \\
-
-      \textbf{Awards:} Azerbaijan Government Scholarship 2022
-
-  \resumeSubHeadingListEnd
-
-
-% -------------------- PUBLICATIONS --------------------
-% -------------------- PUBLICATIONS --------------------
-\section{Publications}
-\resumeSubHeadingListStart
-
-  \resumeProjectHeading
-    {\textbf{Algorithmic Bargaining: Usability, Challenges, and Market Implications in Dynamic Pricing}}{Dec. 2024}
-\vspace{-15pt}
-  \resumeProjectHeading
-    {\textbf{Systems} $|$ {\footnotesize{\emph{Accepted in: Journal of Baku Engineering University (BEU), ISSN 2521-635X}}}}{}\\
-\vspace{8pt}
-    {
-    Conducted research on dynamic pricing systems and interactive bidding algorithms, analyzing their usability, market implications, and societal impacts. Focused on e-commerce applications and algorithmic negotiation techniques. The study explored the ethical considerations, fairness, and transparency in pricing models, and examined potential consequences for competition and consumer welfare.
-    }
-
-\resumeSubHeadingListEnd
-
-
-
-% -------------------- SKILLS --------------------
-\section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-    
-    \textbf{Languages:} {Python, C, C++, Java, JavaScript, C\#, PHP,  HTML, CSS, SQL, jQuery, \LaTeX}\\
-    \textbf{Frameworks:} {React, Redux, TypeScript, Node.js, Express.js, Material-UI, Django, Flask, D3.js}\\
-    \textbf{Cloud and DevOps:} {Google Cloud, AWS, Docker, Digital Ocean, Alibaba Cloud, Heroku, Vercel, Kubernetes, Docker}\\
-\textbf{Design and Animation:} {Adobe XD, Figma, Photoshop, Inkscape, Canva, GIMP, Maya Animation, Blender}\\
-\textbf{Video Editing and Effects:} {Adobe After Effects, Adobe Premiere Pro}\\
-    \textbf{Tools:} {Git/GitHub, Unix Shell, Webpack, VS Code, IntelliJ CLion/PyCharm/IDEA, Visual Studio, Powershell, Bash}\\
-    \textbf{AI/ML:} {PyTorch, TensorFlow, scikit-learn, YOLO, Hugging Face, Seaborn, Keras, FastAPI, Machine Learning Model Deployment, Data Preprocessing, Feature Engineering, Natural Language Processing (NLP), Neural Networks, Computer Vision, Speech-to-Text (STT), Text-to-Speech (TTS), Retrieval-Augmented Generation (RAG)}\\
-     	\textbf{Databases:} {MySQL, SQLite, PostgreSQL, Microsoft SQL Server, Oracle Database, MongoDB , Redis, Firebase, DynamoDB, Cloud Storage Buckets, BigQuery}\\
-	\textbf{Libraries:} {pandas, NumPy, Matplotlib, Selenium, OpenCV, EasyOCR}
-
-     % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-
-    }}
- \end{itemize}
-
-% -------------------- PROJECTS --------------------
-\section{Projects}
-    \resumeSubHeadingListStart
-
-	\resumeProjectHeading
-	    {\textbf{MenstrualTrackerAndPredictor} $|$ \footnotesize\emph{Java, Python, Kaggle, TensorFlow, SQLite}}{March 2024 - Nov. 2024}
-	    \resumeItemListStart
-	        \resumeItem{Built a fully functional Female Health Tracker app with features such as cycle logging, AI-based period prediction, and symptom tracking.}
-	        \resumeItem{Integrated a backend API using Flask for secure user authentication, data storage, and AI chatbot functionality.}
-	        \resumeItem{Designed an intuitive calendar-based UI using Java, Material Design, and third-party libraries like MaterialCalendarView.}
-	        \resumeItem{Implemented machine learning models using TensorFlow to provide accurate period predictions and symptom analysis.}
-	        \resumeItem{Gained hands-on experience in developing Android apps with real-time backend databases and RESTful APIs.}
-	    \resumeItemListEnd
-
-    
-	  \resumeProjectHeading
-	{\textbf{DetectLicensePlatefromVideo} $|$ \footnotesize\emph{YOLOv8, OpenCV, EasyOCR, Matplotlib, Ultralytics, Tqdm}}{Nov. 2024}
-	\resumeItemListStart
-	    \resumeItem{Developed an AI-powered system to detect vehicles and license plates from video footage using YOLOv8 and OpenCV.}
-	    \resumeItem{Extracted and enhanced license plate text using EasyOCR and stored data in CSV with timestamps.}
-	    \resumeItem{Interpolated CSV data to fill gaps and seamlessly overlaid it onto the original video for real-time sci-fi style tracking.}
-	    \resumeItem{Optimized system performance for handling asynchronous video processing tasks efficiently.}
-	\resumeItemListEnd
-
- \resumeProjectHeading
-{\textbf{DalbhatPowerBot} $|$ \footnotesize\emph{Telegram API, Playwright, BeautifulSoup, JSON, AIOHTTP, RapidAPI}}{Aug. 2022 -- Present}
-\resumeItemListStart
-    \resumeItem{Created an automated Telegram bot for multimedia downloads, social media scraping, and Nepali utilities.}
-    \resumeItem{Integrated APIs and reverse-engineered platforms like Twitter, Reddit, TikTok, Instagram, and Facebook.}
-    \resumeItem{Enabled advanced downloading of photos, videos, and audio (up to 2GB) with yt-dlp and optimized pipelines.}
-    \resumeItem{Developed Nepali calendar, horoscope, dictionary, and stock market utilities using modular JSON storage.}
-    \resumeItem{Bypassed CAPTCHA and access restrictions to ensure 99\% uptime and fast responses.}
-\resumeItemListEnd
-
-          
-    \resumeSubHeadingListEnd
-
-% -------------------- EXPERIENCE --------------------
 \section{Experience}
-\resumeSubHeadingListStart
+\combosection{Script Winter of Code}{Participant \href{https://github.com/harshcasper/rotten-scripts}{Rotten-Scripts}}{Dec 2020-Present}{
+  \begin{tightlist}
+    \item Proposed new sections for PowerShell Scripts
+    \item Proposed and created structure of website for the project
+    \item Added Automatic Pull Request Assigning Action
+  \end{tightlist}
+}
 
-\resumeProjectHeading
-{\textbf{Software,  DevOps \& Full-Stack Engineer} $|$ \footnotesize\emph{Freelance Developer, Founder, and Designer}\vspace{8pt}}{Oct. 2019 -- Present}
-{\small{
-Engaged in diverse Python projects and web development, including advanced web applications, cloud computing, server management, and automation for several clients. Specialized in scraping, scripting, bot and chatbot creation, and full-stack development. Proficient in AI/ML, cybersecurity, and system administration, demonstrating expertise across various Python applications and solutions. Handled the complete lifecycle of website development, including designing, developing, and deploying for domains like \textbf{prabe.sh}, \textbf{codechod.com}, and \textbf{prabesharyal.info.np}. Gained extensive experience in full-stack development, server management, and cloud deployment, utilizing technologies like \textbf{React, Next.js, Node.js, Python, Django, FastAPI}, and integrating \textbf{CI/CD pipelines, Docker, Kubernetes, and Terraform} to streamline deployments. Focused on automation, scalability, and security while delivering production-ready solutions with modern UI/UX interfaces.
-}}
+\combosection{Google Season of Docs 2020}{Technical Writer, VideoLAN}{Sep 2020-Nov 2020}{
+  \begin{tightlist}
+    \item Created \href{https://code.videolan.org/docs/vlc-android-user}{VLC for Android User Documentation}
+    \item Proposed a new structure for the documentation (Sphinx, reStructuredText)
+    \item Writing user-friendly and well researched content for technical and non-technical users.
+    \item Proper amount and placement of screenshots and other media for appealing and informative docs.
+    \item Optimized web pages for major form factors and ease of navigation
+  \end{tightlist}
+}
 
-\resumeProjectHeading
-{\textbf{Hacker Hero} $|$ \footnotesize\emph{Content Creator}\vspace{8pt}}{Aug. 2016 -- July 2022}
-{\small{
-Specialized in video production, editing, and design. Gained proficiency in Adobe Suite and honed skills in YouTube content creation. Learned the intricacies of video editing, scripting, and audience engagement. Achieved a significant milestone by earning my first income at the age of 19 through creating and posting video content.
-}}
+\section{Projects}
+\combosection{\href{https://github.com/avinal/Profile-Readme-Wakatime}{Automated Coding Activity GitHub Action}}{Python, Docker, GitHub Actions, Bash Scripting}{}{
+  \begin{tightlist}
+    \item Automatically generates WakaTime Coding Activity graph that can be embedded in Readme(s) and websites.
+    \item Uses WakaTime API to gather coding activity of last seven days as JSON.
+    \item The data is then processes and converted to a SVG graph using matplotlib
+  \end{tightlist}
+}
 
-    \resumeProjectHeading
-    {\textbf{Volunteering \& Nepali Startups} $|$ \footnotesize\emph{Contributor and Volunteer}\vspace{8pt}}{2019 -- 2022}
-{\small{Contributed to several Nepali startups, including \textbf{Clamphook}, an EdTech platform, where I engaged in various development and organizational roles. Volunteered in diverse initiatives such as \textbf{Nepal Scouts}, \textbf{Mathematics Initiatives in Nepal}, and \textbf{Students Reunion}, showcasing a strong commitment to community development and youth engagement.
-}}
+\combosection{\href{https://github.com/avinal/Binary-Search-Tree-Travarsal}{Binary Search Tree Traversal Animator}}{Java, Gradle, Swing, Multi-threading}{}{
+  \begin{tightlist}
+    \item Creates Binary Search Tree node-by-node and draws the path taken by the traversals.
+    \item Visualizes Inorder, Preorder, Postorder and Levelorder using multi-threading and recursion.
+  \end{tightlist}
+}
 
-\resumeSubHeadingListEnd
+\combosection{\href{https://github.com/avinal/FITS-Image}{Astronomical Image Extraction from FITS File}}{C++, CFITSIO, Boost.GIL, CMake}{}{Flexible Image Transport System has been used for decades to store and transfer astronomical images and needs specialized software to view them, this project extract those images as JPEG or PNG that can be viewed by common image viewer.}
+\vspace{\topsep}
+\combosection{Open Source Contributions}{\href{https://github.com/avinal}{GitHub}, \href{https://code.videolan.org/avinal}{GitLab}}{}{Contributed to organizations: GitHub, Jupyter-XEUS, JetBrains, Embox, VideoLAN}
 
-\section{Leadership \& Activities}
-% \subsection{Leadership \& Activities}
-\resumeSubHeadingListStart
+\vspace{\topsep}
+\section{Skills}
+\combosection{Programming}{}{}{
+  \begin{tightlist}
+    \item Data Structures and Algorithms
+    \item C/C++ (2+ years) - STL, Pointers, Templates, OOP, API development, Boost C++, Qt(basic)
+    \item Java (1+ years) - Collections, Generic Programming, Basic Multi-threading
+    \item Basic - SQL, MATLAB, HTML, CSS, JavaScript, Python
+  \end{tightlist}
+}
 
-\resumeProjectHeading
-{\textbf{International Students’ Club of Baku Engineering Uni. } $|$ \footnotesize\emph{Social Media Manager}\vspace{8pt}}{Feb. 2023 -- July 2024}
-{\small{
-Managed and oversaw various social media platforms, including curating engaging posts, reels, videos, and photos. Captured and edited visual content to enhance audience engagement. Created and distributed forms to streamline event organization and communication. Raised funds through strategic campaigns and marketing initiatives. Led targeted social media and promotional activities to maximize outreach. Collaborated on public relations efforts and ensured the effective execution of all related responsibilities.
-}}
+\combosection{Tools/Others}{}{}{
+  \begin{tightlist}
+    \item Scripting(Bash, Python), git, GitHub Actions, CI/CD, Linux/Unix, Windows, Windows Subsystem for Linux
+    \item \LaTeX, Visual Studio Code, CLion, IntelliJ IDEA, Vim, Visual Studio, Word, PowerPoint, Excel
+  \end{tightlist}
+}
 
-\resumeProjectHeading
-{\textbf{Class Representative/Captain} $|$ \footnotesize\emph{Horizon G.B.S. School, Kathmandu Model Secondary School}\vspace{8pt}}{2013 -- 2021}
-{\small{
-Served as the Class Representative, recognized as one of the best CRs for effective leadership, communication, and coordination between students and teachers. Managed class activities, resolved conflicts, and ensured smooth communication between the class and school administration.
-}}
+\section{Education}
+\combosection{National Institute of Technology, Hamirpur}{B.Tech in Computer Sci. and Eng.}{2018-Present}{CGPA till 5\textsuperscript{th} semester - 8.39
 
+  \ifextended
+    Courses - Advanced Calculus, Statistics, Probability and Queuing Theory, Algorithm Design, Digital Logic Design, Database Management Systems, Data Structures, Operating Systems, Compiler Design, Computer Networks
+  \else
+  \fi
+  }
 
+\vspace{\topsep}
+\combosection{The Coding School}{Quantum Computing}{Oct 2020-Present}{Grade 1\textsuperscript{st} semester - 99.32\%
 
-\resumeSubHeadingListEnd
+Basic Quantum Mechanics and Quantum Computing}
 
-% -------------------- Interest and Awards --------------------
-\section{Interests and Awards}
-\begin{itemize}[leftmargin=0.15in, label={}]
-   \small{\item{
-
-   \textbf{Interests:} IoT, Tech Innovation, Entrepreneurship, Neural Networks, LLMs, Cloud Computing, Sustainability\\
-    \textbf{Languages:} Nepali (Native), English (Proficient), Hindi (Proficient), Azerbaijani (Beginner)\\
-    \textbf{Soft Skills:} Leadership, Communication, Problem-Solving, Teamwork, Critical Thinking, Adaptability\\
- %----   \textbf{Awards:} Azerbaijan Government Scholarship | 2022 (For 40 students globally from NAAM nations)\\ ---
-}}
-\end{itemize}
-
-
+\vspace{\topsep}
+\section{Certifications}
+\combosection{Google IT Support Professional}{Coursera}{2020}{Computer Network, System Administration, Operating System, Cyber Security}
+\vspace{\topsep}
+\section{Others}
+\combosection{Computer Science Engineers' Society}{Coordinator}{2019-Present}{
+  Departmental Society of CSE NITH. Organizes Monthly Competitive Programming Contest and Bootcamp.
+}
 
 \end{document}
