@@ -32,7 +32,7 @@ I'm an enthusiastic full-stack developer with a diverse skill set, well-versed i
 <div align="center">
     <img src="https://img.shields.io/badge/Python-Advanced-informational?style=flat&logo=python&logoColor=white&color=3776AB" alt="Python">
     <img src="https://img.shields.io/badge/C-Proficient-informational?style=flat&logo=c&logoColor=white&color=A8B9CC" alt="C">
-    <img src="https://img.shields.io/badge/Java-Beginner-informational?style=flat&logo=java&logoColor=white&color=007396" alt="Java">
+    <img src="https://img.shields.io/badge/Java-Proficient-informational?style=flat&logo=java&logoColor=white&color=007396" alt="Java">
     <img src="https://img.shields.io/badge/HTML5-Advanced-informational?style=flat&logo=html5&logoColor=white&color=E34F26" alt="HTML5">
     <img src="https://img.shields.io/badge/CSS3-Advanced-informational?style=flat&logo=css3&logoColor=white&color=1572B6" alt="CSS3">
     <img src="https://img.shields.io/badge/JavaScript-Intermediate-informational?style=flat&logo=javascript&logoColor=white&color=F7DF1E" alt="JavaScript">
