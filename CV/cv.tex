@@ -1,0 +1,207 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{center}
+    \textbf{\Huge \scshape Your Full Name} \\ \vspace{10pt}
+    \small 
+    \faIcon{github} \href{https://github.com/your-github}{\underline{github.com/your-github}} $|$
+    \faIcon{linkedin} \href{https://linkedin.com/in/your-linkedin}{\underline{linkedin.com/in/your-linkedin}} $|$
+    \faIcon{envelope} \href{mailto:your-email@gmail.com}{\underline{your-email@gmail.com}} $|$
+    \faIcon{globe} \href{https://yourwebsite.com}{\underline{yourwebsite.com}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Baku Engineering University}{Expected June 2026}
+      {B.Sc. in Computer Engineering}{GPA: 4.0/4.0}
+
+    \resumeSubheading
+      {Little High School}{Graduated June 2022}
+      {High School Diploma}{GPA: 4.44/4.0}
+  \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+
+    \item \textbf{Programming:} Python, C, C++, Java, JavaScript, HTML, CSS, React, Redux, TypeScript, Node.js, Express.js, SQL, MongoDB, Bash, Django, Flask
+    \item \textbf{Cloud and DevOps:} Google Cloud, AWS, Docker, Digital Ocean
+    \item \textbf{Design:} Adobe XD, Figma, Photoshop, Inkscape, GIMP
+    \item \textbf{Other Skills:} Machine Learning, Git, Computer Vision, Speech-to-Text (STT), Text-to-Speech (TTS), Retrieval-Augmented Generation (RAG)
+ \end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{TikTok Video Metadata Extractor}}{2024}
+      \resumeItemListStart
+        \resumeItem{Used \texttt{yt-dlp} and Python to extract titles, unique IDs, and nicknames from TikTok videos.}
+        \resumeItem{Integrated APIs for enhanced data handling and seamless functionality.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Instagram JSON Parser}}{2024}
+      \resumeItemListStart
+        \resumeItem{Developed a Python script to parse Instagram archives and identify top participants in chat files.}
+        \resumeItem{Implemented robust handling of JSON structures and output results in an optimized format.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Telegram Bot for Social Media Integration}}{2024}
+      \resumeItemListStart
+        \resumeItem{Built a bot to send tweets from multiple Twitter accounts to Telegram channels using a local API server.}
+        \resumeItem{Implemented Airtable UI to allow dynamic parameter updates and streamlined management.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Menstrual Tracker Android App}}{2024}
+      \resumeItemListStart
+        \resumeItem{Developed an Android application with a login activity and theming exclusion for the login page.}
+        \resumeItem{Integrated personalized menstrual tracking features and user-friendly UI design.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Competitive Programming Club}{2023 -- Present}
+      {Active Member}{}
+      
+    \resumeSubheading
+      {Freelance Tutor}{2019 -- Present}
+      {Math and Programming Tutor}{}
+      
+    \resumeSubheading
+      {Volunteer, Manager}{2018 -- Present}
+      {Luigi Team Charity}{Distributed educational materials to underprivileged students.}
+
+  \resumeSubHeadingListEnd
+
+% -------------------- RESEARCH --------------------
+\section{Research Interests}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Machine Learning Research in Nepali Language Processing}{2024 -- Present}
+    {Developing AI tools for low-resource languages.}{Exploring NLP challenges and applications for Nepali.}
+\resumeSubHeadingListEnd
+
+% -------------------- ACHIEVEMENTS --------------------
+\section{Achievements}
+\resumeSubHeadingListStart
+  \resumeItem{Top 5 in Time-Keeping Championship (2022).}
+  \resumeItem{Awarded multiple distinctions in high school, including Dean's Honor List and AP Scholar Awards.}
+  \resumeItem{Winner of multiple hackathons and competitive programming challenges.}
+\resumeSubHeadingListEnd
+
+% -------------------- HOBBIES --------------------
+\section{Hobbies}
+\resumeSubHeadingListStart
+  \resumeItem{Playing drums in jazz, symphonic, and marching bands.}
+  \resumeItem{Conducting online AI/ML discussions and research-focused collaborative workshops.}
+\resumeSubHeadingListEnd
+
+\end{document}
