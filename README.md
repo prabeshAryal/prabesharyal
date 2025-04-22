@@ -29,7 +29,10 @@ I'm an enthusiastic full-stack developer with a diverse skill set, well-versed i
 
 ## 📊 My Github Stats
 
-![Metrics](/github-metrics.svg)
+<div align="center">
+  <img src="/github-metrics.svg" alt="Metrics" />
+</div>
+
 
 
 <br/>
