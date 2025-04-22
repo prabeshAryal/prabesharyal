@@ -2,31 +2,6 @@
 
 I'm an enthusiastic full-stack developer with a diverse skill set, well-versed in a multitude of languages, frameworks, and libraries. My journey involves crafting intricate bots, scripts, and delving into the world of code.
 
-<div align="center">
-    <a href="https://github.com/prabesharyal">
-        <img src="https://img.shields.io/github/followers/prabesharyal?label=Followers&style=social" alt="GitHub Followers">
-    </a>
-    <!-- <img src="https://img.shields.io/github/profile-views/prabesharyal?style=social" alt="Profile Views"> -->
-    <a href="https://github.com/prabesharyal?tab=repositories">
-        <img src="https://img.shields.io/badge/Total%20Repositories-%E2%9C%93-green" alt="Total Repositories">
-    </a>
-    <a href="https://github.com/prabesharyal?tab=stars">
-        <img src="https://img.shields.io/badge/Total%20Stars-%E2%98%85-yellow" alt="Total Stars">
-    </a>
-    <a href="https://github.com/prabesharyal?tab=following">
-        <img src="https://img.shields.io/badge/Following-%E2%9C%93-blue" alt="Following">
-    </a>
-    <a href="https://github.com/prabesharyal">
-        <img src="https://img.shields.io/github/last-commit/prabesharyal/prabesharyal?style=flat-square" alt="Last Commit">
-    </a>
-    <img src="https://img.shields.io/github/commit-activity/m/prabesharyal/prabesharyal" alt="Commit Activity">
-    <img src="https://img.shields.io/github/contributors/prabesharyal/prabesharyal" alt="Contributors">
-    <br><br>
-</div>
-
-<br>
-
-
 ## 📊 My Github Stats
 
 <div align="center">
@@ -38,47 +13,17 @@ I'm an enthusiastic full-stack developer with a diverse skill set, well-versed i
 <br/>
 <br/>
 
-## 🏆 Certifications & Learning
-
-<br/>
-### Self-Taught Expertise
-- **Python:** Advanced proficiency (Utilizing a variety of libraries including Regex, Selenium, Django)
-
-### [Univeristy](https://beu.edu.az/en) and [Coursera]([https://coursera.org/share/ada58a8c20bba36e1a3ede0ab3b29acf](https://www.coursera.org/account/accomplishments/certificate/2LE688QRASLH))
-- **C:** Data Structures, Algorithms, Arrays, and Objects
-
-### [FreeCodeCamp](https://www.freecodecamp.org/prabesharyal)
-- **Front-End:** HTML, CSS, Flexbox, CSS Grid, React, Redux, Sass, Bootstrap, jQuery
-- **Back-End:** Node.js, Express, MongoDB, Mongoose
-- **Data Visualization:** D3.js
-- **Quality Assurance:** Chai, Pug, Passport, Socket.io
-- **Information Security:** HelmetJS, TCP, Nmap, Basic Penetration Testing
-
-### Sololearn
-- **Python:** [Core](https://www.sololearn.com/certificates/CT-QI3CPNPE)
-- **Java:** [Basic](https://www.sololearn.com/certificates/CT-VGCGTY4D)
-- **HTML:** [HTML5](https://www.sololearn.com/certificates/CT-FEALLKTT)
 
 ## 👨‍💻 Projects & Notable Works
 
-I proudly hold a Legacy Full Stack Certification from FreeCodeCamp, a testament to my successful completion of an array of projects and the mastery of various languages and frameworks. Some of my noteworthy projects include:
+Some of my noteworthy projects include:
 
-- [My Portfolio Website](https://prabesharyal.info.np)
-- [Random Quote Machine](https://superb-centaur-f48827.netlify.app/)
-- [Javascript Calculator](https://magical-unicorn-9bc553.netlify.app/)
-- [Markdown Viewer](https://dashing-phoenix-4ff0d6.netlify.app/)
-- [Video Game Sales Data Visualization](https://prabesharyal.github.io/Non-Competitive-Course-Projects/freecodecamp.org/Data%20Visualization/Visualize%20Data%20with%20a%20Treemap%20Diagram/index.html)
-- [Quality Assurance Projects & Source](https://www.freecodecamp.org/certification/prabesharyal/quality-assurance-v7)
-- [Information Security: SHA-1 Cracker](https://replit.com/@prabesharyal24/boilerplate-SHA-1-password-cracker)
-- [Explore All (20+) Full Stack Projects](https://www.freecodecamp.org/prabesharyal)
+- [prabe.sh](https://prabe.sh)
+- [Comprehensive Full Stack Website](https://innovativeecokrishi.com.np)
+- [A simple looking bot that does many thing](https://github.com/prabeshAryal/dalbhatpower_tg_bot)
+- [20+ Full Stack Projects](https://www.freecodecamp.org/prabesharyal)
 
-## 🐍 Python, 💻 Linux & Windows Mastery
 
-Beyond my web development expertise and solid grip on Python, I possess advanced knowledge of both Linux and Windows operating systems. My specialization lies in crafting versatile bots and scripts, streamlining tasks and boosting efficiency.
-
-## 📚 Unending Learning & Exploration
-
-My horizons are ever-expanding. I'm currently delving into the realms of Cryptography, sharpening my web skills, and progressively mastering Python. Learning is an eternal journey, and I'm exhilarated to keep pushing my limits.
 
 ## 📫 Let's Connect!
 
