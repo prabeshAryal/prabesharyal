@@ -26,33 +26,6 @@ I'm an enthusiastic full-stack developer with a diverse skill set, well-versed i
 
 <br>
 
-## 🚀 Language & Framework Expertise
-
-<br/>
-<div align="center">
-    <img src="https://img.shields.io/badge/Python-Advanced-informational?style=flat&logo=python&logoColor=white&color=3776AB" alt="Python">
-    <img src="https://img.shields.io/badge/C-Proficient-informational?style=flat&logo=c&logoColor=white&color=A8B9CC" alt="C">
-    <img src="https://img.shields.io/badge/Java-Proficient-informational?style=flat&logo=java&logoColor=white&color=007396" alt="Java">
-    <img src="https://img.shields.io/badge/HTML5-Advanced-informational?style=flat&logo=html5&logoColor=white&color=E34F26" alt="HTML5">
-    <img src="https://img.shields.io/badge/CSS3-Advanced-informational?style=flat&logo=css3&logoColor=white&color=1572B6" alt="CSS3">
-    <img src="https://img.shields.io/badge/JavaScript-Intermediate-informational?style=flat&logo=javascript&logoColor=white&color=F7DF1E" alt="JavaScript">
-    <img src="https://img.shields.io/badge/React-Intermediate-informational?style=flat&logo=react&logoColor=white&color=61DAFB" alt="React">
-    <img src="https://img.shields.io/badge/Redux-Intermediate-informational?style=flat&logo=redux&logoColor=white&color=764ABC" alt="Redux">
-    <img src="https://img.shields.io/badge/Node.js-Intermediate-informational?style=flat&logo=node.js&logoColor=white&color=339933" alt="Node.js">
-    <img src="https://img.shields.io/badge/Express.js-Intermediate-informational?style=flat&logo=express&logoColor=white&color=000000" alt="Express.js">
-    <img src="https://img.shields.io/badge/MongoDB-Intermediate-informational?style=flat&logo=mongodb&logoColor=white&color=47A248" alt="MongoDB">
-    <img src="https://img.shields.io/badge/Sass-Intermediate-informational?style=flat&logo=sass&logoColor=white&color=CC6699" alt="Sass">
-    <img src="https://img.shields.io/badge/Bootstrap-Intermediate-informational?style=flat&logo=bootstrap&logoColor=white&color=563D7C" alt="Bootstrap">
-    <img src="https://img.shields.io/badge/jQuery-Intermediate-informational?style=flat&logo=jquery&logoColor=white&color=0769AD" alt="jQuery">
-    <img src="https://img.shields.io/badge/D3.js-Intermediate-informational?style=flat&logo=d3.js&logoColor=white&color=F9A03C" alt="D3.js">
-</div>
-
-<br/>
-<p align="center">
-    <a href="https://github-readme-streak-stats.herokuapp.com/?user=prabesharyal&theme=black-ice&hide_border=true&stroke=0000&background=060A0CD0">
-        <img title="🔥 Get streak stats for your profile" alt="Prabesh's streak" src="https://github-readme-streak-stats.herokuapp.com/?user=prabesharyal&theme=black-ice&hide_border=true&stroke=0000&background=060A0CD0"/>
-    </a>
-</p>
 
 ## 📊 My Github Stats
 
