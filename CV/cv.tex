@@ -1,131 +1,283 @@
-\documentclass[a4paper,10pt]{article}
-\usepackage[left=0.5in, right=0.5in, top=0.7in, bottom=0.7in]{geometry}
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage{hyperref} % for hyperlinks
-\usepackage{xcolor} % for colors
-\usepackage{lipsum} % for dummy text
-\usepackage{fancyhdr} % for page headers
-\usepackage{multicol} % for two-column layout
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
 \pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-\definecolor{techblue}{RGB}{0,102,204} % Techy Blue
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
 
-\hypersetup{
-    colorlinks=true,
-    linkcolor=techblue,
-    urlcolor=techblue,
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
 }
 
-\renewcommand{\headrulewidth}{0pt} % Remove header line
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
 
-\setlist{nosep}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
 
-% Set top and bottom margins to be the same
-\geometry{top=0.7in, bottom=0.7in}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
 
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
 \begin{document}
-\title{\LARGE\textbf{Prabesh Aryal}\\ \href{https://prabesharyal.info.np}{\footnotesize https://prabesharyal.info.np}}
-\date{}
-\maketitle
-\thispagestyle{empty} % Remove page number on this page
 
-% Add equal vertical space above and below the custom title line
-\vspace{-\baselineskip}
-\vspace{-\baselineskip}
-\vspace{-\baselineskip}
-\vspace{-\baselineskip}
-% Add the custom title line
+% -------------------- HEADING--------------------
+\begin{flushright}
+  % \vspace{-4pt}
+  \color{gray}
+  \item
+  Last Updated on \today
+\end{flushright}
+
+\vspace{-5pt}
+
 \begin{center}
-    \textcolor{techblue}{\rule{1\linewidth}{2pt}}
+    \textbf{\Huge \scshape Prabesh Aryal} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/prabeshAryal}{\underline{prabeshAryal}} $  $
+    \faIcon{code}
+    \href{https://prabe.sh}
+    {\underline{prabe.sh}} $ $
+    \faIcon{linkedin}
+    \href{https://linkedin.com/in/prabesharyalnp}{\underline{prabesharyalnp}} $ $
+    \faIcon{mobile}
+    \href{tel:+994557015524}
+    {\underline{994-055-701-5524}} $ $
+    \faIcon{envelope}
+      \href{mailto:prabesharyal24@gmail.com}
+    {\underline{prabesharyal24@gmail.com}}
 \end{center}
-\vspace{\baselineskip}
-% Start two-column layout
-\begin{multicols}{2}
 
-% Rest of your document here...
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Baku Engineering University, \footnotesize{Azerbaijan}}{July 2026}
+      {Bachelors in Computer Engineering}{Current GPA: 89.02/100}
+      
+    \resumeSubheading
+      {Kathmandu Model Secondary School, \footnotesize{Nepal}}{December 2021}
+      {National Examinations Board}{GPA: 3.08/4.0}
 
-\section*{\textcolor{techblue}{Profile}}
-Student, Full Stack Developer \& Python Programmer
+%    \vspace{-10pt}
 
-\section*{\textcolor{techblue}{Achievements}}
-\begin{itemize}
-    \item Dynamic Full Stack Developer.
-    \item Proficient in Python, JavaScript, and C (Objective).
-    \item Thrives on conquering new challenges.
+    \subsection{Coursework}
+	\textbf{Courses:} Basics of Computer Engineering, Basics of Programming, Object-Oriented Programming, Data Structures \& Algorithms, Web Systems \& Technologies, Computer Architecture, Discrete Mathematics, Linear Algebra, Differential Equations, Calculus, Circuit Theory, Basics of Electronics, Engineering Economics, Principles of Entrepreneurship \& Introduction to Business, Probability \& Statistics, Physics \\
+
+      \textbf{Awards:} Azerbaijan Government Scholarship 2022
+
+  \resumeSubHeadingListEnd
+
+
+% -------------------- PUBLICATIONS --------------------
+% -------------------- PUBLICATIONS --------------------
+\section{Publications}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Algorithmic Bargaining: Usability, Challenges, and Market Implications in Dynamic Pricing}}{Dec. 2024}
+\vspace{-15pt}
+  \resumeProjectHeading
+    {\textbf{Systems} $|$ {\footnotesize{\emph{Accepted in: Journal of Baku Engineering University (BEU), ISSN 2521-635X}}}}{}\\
+\vspace{8pt}
+    {
+    Conducted research on dynamic pricing systems and interactive bidding algorithms, analyzing their usability, market implications, and societal impacts. Focused on e-commerce applications and algorithmic negotiation techniques. The study explored the ethical considerations, fairness, and transparency in pricing models, and examined potential consequences for competition and consumer welfare.
+    }
+
+\resumeSubHeadingListEnd
+
+
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+    \textbf{Languages:} {Python, C, C++, Java, JavaScript, C\#, PHP,  HTML, CSS, SQL, jQuery, \LaTeX}\\
+    \textbf{Frameworks:} {React, Redux, TypeScript, Node.js, Express.js, Material-UI, Django, Flask, D3.js}\\
+    \textbf{Cloud and DevOps:} {Google Cloud, AWS, Docker, Digital Ocean, Alibaba Cloud, Heroku, Vercel, Kubernetes, Docker}\\
+\textbf{Design and Animation:} {Adobe XD, Figma, Photoshop, Inkscape, Canva, GIMP, Maya Animation, Blender}\\
+\textbf{Video Editing and Effects:} {Adobe After Effects, Adobe Premiere Pro}\\
+    \textbf{Tools:} {Git/GitHub, Unix Shell, Webpack, VS Code, IntelliJ CLion/PyCharm/IDEA, Visual Studio, Powershell, Bash}\\
+    \textbf{AI/ML:} {PyTorch, TensorFlow, scikit-learn, YOLO, Hugging Face, Seaborn, Keras, FastAPI, Machine Learning Model Deployment, Data Preprocessing, Feature Engineering, Natural Language Processing (NLP), Neural Networks, Computer Vision, Speech-to-Text (STT), Text-to-Speech (TTS), Retrieval-Augmented Generation (RAG)}\\
+     	\textbf{Databases:} {MySQL, SQLite, PostgreSQL, Microsoft SQL Server, Oracle Database, MongoDB , Redis, Firebase, DynamoDB, Cloud Storage Buckets, BigQuery}\\
+	\textbf{Libraries:} {pandas, NumPy, Matplotlib, Selenium, OpenCV, EasyOCR}
+
+     % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+
+    }}
+ \end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+	\resumeProjectHeading
+	    {\textbf{MenstrualTrackerAndPredictor} $|$ \footnotesize\emph{Java, Python, Kaggle, TensorFlow, SQLite}}{March 2024 - Nov. 2024}
+	    \resumeItemListStart
+	        \resumeItem{Built a fully functional Female Health Tracker app with features such as cycle logging, AI-based period prediction, and symptom tracking.}
+	        \resumeItem{Integrated a backend API using Flask for secure user authentication, data storage, and AI chatbot functionality.}
+	        \resumeItem{Designed an intuitive calendar-based UI using Java, Material Design, and third-party libraries like MaterialCalendarView.}
+	        \resumeItem{Implemented machine learning models using TensorFlow to provide accurate period predictions and symptom analysis.}
+	        \resumeItem{Gained hands-on experience in developing Android apps with real-time backend databases and RESTful APIs.}
+	    \resumeItemListEnd
+
+    
+	  \resumeProjectHeading
+	{\textbf{DetectLicensePlatefromVideo} $|$ \footnotesize\emph{YOLOv8, OpenCV, EasyOCR, Matplotlib, Ultralytics, Tqdm}}{Nov. 2024}
+	\resumeItemListStart
+	    \resumeItem{Developed an AI-powered system to detect vehicles and license plates from video footage using YOLOv8 and OpenCV.}
+	    \resumeItem{Extracted and enhanced license plate text using EasyOCR and stored data in CSV with timestamps.}
+	    \resumeItem{Interpolated CSV data to fill gaps and seamlessly overlaid it onto the original video for real-time sci-fi style tracking.}
+	    \resumeItem{Optimized system performance for handling asynchronous video processing tasks efficiently.}
+	\resumeItemListEnd
+
+ \resumeProjectHeading
+{\textbf{DalbhatPowerBot} $|$ \footnotesize\emph{Telegram API, Playwright, BeautifulSoup, JSON, AIOHTTP, RapidAPI}}{Aug. 2022 -- Present}
+\resumeItemListStart
+    \resumeItem{Created an automated Telegram bot for multimedia downloads, social media scraping, and Nepali utilities.}
+    \resumeItem{Integrated APIs and reverse-engineered platforms like Twitter, Reddit, TikTok, Instagram, and Facebook.}
+    \resumeItem{Enabled advanced downloading of photos, videos, and audio (up to 2GB) with yt-dlp and optimized pipelines.}
+    \resumeItem{Developed Nepali calendar, horoscope, dictionary, and stock market utilities using modular JSON storage.}
+    \resumeItem{Bypassed CAPTCHA and access restrictions to ensure 99\% uptime and fast responses.}
+\resumeItemListEnd
+
+          
+    \resumeSubHeadingListEnd
+
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Software,  DevOps \& Full-Stack Engineer} $|$ \footnotesize\emph{Freelance Developer, Founder, and Designer}\vspace{8pt}}{Oct. 2019 -- Present}
+{\small{
+Engaged in diverse Python projects and web development, including advanced web applications, cloud computing, server management, and automation for several clients. Specialized in scraping, scripting, bot and chatbot creation, and full-stack development. Proficient in AI/ML, cybersecurity, and system administration, demonstrating expertise across various Python applications and solutions. Handled the complete lifecycle of website development, including designing, developing, and deploying for domains like \textbf{prabe.sh}, \textbf{codechod.com}, and \textbf{prabesharyal.info.np}. Gained extensive experience in full-stack development, server management, and cloud deployment, utilizing technologies like \textbf{React, Next.js, Node.js, Python, Django, FastAPI}, and integrating \textbf{CI/CD pipelines, Docker, Kubernetes, and Terraform} to streamline deployments. Focused on automation, scalability, and security while delivering production-ready solutions with modern UI/UX interfaces.
+}}
+
+\resumeProjectHeading
+{\textbf{Hacker Hero} $|$ \footnotesize\emph{Content Creator}\vspace{8pt}}{Aug. 2016 -- July 2022}
+{\small{
+Specialized in video production, editing, and design. Gained proficiency in Adobe Suite and honed skills in YouTube content creation. Learned the intricacies of video editing, scripting, and audience engagement. Achieved a significant milestone by earning my first income at the age of 19 through creating and posting video content.
+}}
+
+    \resumeProjectHeading
+    {\textbf{Volunteering \& Nepali Startups} $|$ \footnotesize\emph{Contributor and Volunteer}\vspace{8pt}}{2019 -- 2022}
+{\small{Contributed to several Nepali startups, including \textbf{Clamphook}, an EdTech platform, where I engaged in various development and organizational roles. Volunteered in diverse initiatives such as \textbf{Nepal Scouts}, \textbf{Mathematics Initiatives in Nepal}, and \textbf{Students Reunion}, showcasing a strong commitment to community development and youth engagement.
+}}
+
+\resumeSubHeadingListEnd
+
+\section{Leadership \& Activities}
+% \subsection{Leadership \& Activities}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{International Students’ Club of Baku Engineering Uni. } $|$ \footnotesize\emph{Social Media Manager}\vspace{8pt}}{Feb. 2023 -- July 2024}
+{\small{
+Managed and oversaw various social media platforms, including curating engaging posts, reels, videos, and photos. Captured and edited visual content to enhance audience engagement. Created and distributed forms to streamline event organization and communication. Raised funds through strategic campaigns and marketing initiatives. Led targeted social media and promotional activities to maximize outreach. Collaborated on public relations efforts and ensured the effective execution of all related responsibilities.
+}}
+
+\resumeProjectHeading
+{\textbf{Class Representative/Captain} $|$ \footnotesize\emph{Horizon G.B.S. School, Kathmandu Model Secondary School}\vspace{8pt}}{2013 -- 2021}
+{\small{
+Served as the Class Representative, recognized as one of the best CRs for effective leadership, communication, and coordination between students and teachers. Managed class activities, resolved conflicts, and ensured smooth communication between the class and school administration.
+}}
+
+
+
+\resumeSubHeadingListEnd
+
+% -------------------- Interest and Awards --------------------
+\section{Interests and Awards}
+\begin{itemize}[leftmargin=0.15in, label={}]
+   \small{\item{
+
+   \textbf{Interests:} IoT, Tech Innovation, Entrepreneurship, Neural Networks, LLMs, Cloud Computing, Sustainability\\
+    \textbf{Languages:} Nepali (Native), English (Proficient), Hindi (Proficient), Azerbaijani (Beginner)\\
+    \textbf{Soft Skills:} Leadership, Communication, Problem-Solving, Teamwork, Critical Thinking, Adaptability\\
+ %----   \textbf{Awards:} Azerbaijan Government Scholarship | 2022 (For 40 students globally from NAAM nations)\\ ---
+}}
 \end{itemize}
 
-\section*{\textcolor{techblue}{Experience}}
-\begin{itemize}
-    \item Content Creator, Hacker Hero, Aug 2016 - Jul 2022
-    \begin{itemize}
-        \item Video production, editing, and design.
-        \item Proficient in Adobe software.
-    \end{itemize}
-    \item Versatile Python \& Web Developer/Designer, Self(Freelance), Oct 2019 - Present
-    \begin{itemize}
-        \item Developed advanced web applications.
-        \item Created efficient bots using Python and Selenium.
-    \end{itemize}
-    \item Social Media Manager, BEU International Student's Club, March 2023 - June 2023
-    \begin{itemize}
-        \item Handled social medias and made engaging contents.
-        \item Public relations activities.
-    \end{itemize}
-\end{itemize}
 
-\section*{\textcolor{techblue}{Certifications}}
-\begin{itemize}
-    \item HTML, \href{https://www.sololearn.com/certificates/CT-FEALLKTT}{Sololearn}, 2019 
-    \item Python Core, \href{https://www.sololearn.com/certificates/CT-QI3CPNPE}{Sololearn}, 2022 
-    \item Become a C Master,  \href{https://programiz.pro/certificates/detail/021FB2F8FA21}{Programiz}, 2023
-    \item Java, \href{https://www.sololearn.com/certificates/CT-VGCGTY4D}{(Sololearn)}, 2023 
-    \item Full Stack Certification,  \href{https://www.freecodecamp.org/certification/prabesharyal/full-stack}{freeCodeCamp}, 2023
-    \item Writing, Running, and Fixing Code in C, \href{https://coursera.org/share/ede0dc6f56168118d55d965a3d8f1f0e}{Duke University}, 2023 
-\end{itemize}
-
-\section*{\textcolor{techblue}{Projects}}
-\begin{itemize}
-    \item \href{https://github.com/prabesharyal/ig_dlp}{Instagram Downloader}
-    \begin{itemize}
-        \item Download Instagram content using Python.
-    \end{itemize}
-    \item \href{https://www.freecodecamp.org/prabesharyal}{Collection of 20+ Full Stack Projects }
-    \begin{itemize}
-        \item Mastery of various languages and frameworks.
-    \end{itemize}
-\end{itemize}
-
-\section*{\textcolor{techblue}{Education}}
-\begin{itemize}
-    \item Bachelors in Computer Engineering, Baku Engineering University, Sep 2022 - Present
-    \item High School, Kathmandu Model College, Jul 2019 - Dec 2021
-\end{itemize}
-
-\section*{\textcolor{techblue}{Languages}}
-\begin{itemize}
-    \item Nepali, English, Hindi \& Azerbaijani
-\end{itemize}
-
-\section*{\textcolor{techblue}{Skills}}
-\begin{itemize}
-    \item Programming Languages: Python, JavaScript (including various libraries), C (Objective), Java (Basic)
-    \item Web Development: HTML5, CSS3, React, Redux, Node.js, Express.js, MongoDB, Sass, Bootstrap, Tailwind, jQuery, D3.js, PHP, SQL
-    \item Platforms:  Firebase, Heroku, Render, DigitalOcean, Docker (Basic)
-    \item Operating Systems: Windows, Linux, Android
-    \item Other Skills: Git, GitHub, Bash, Android Studio, Adobe Suite, Microsoft Office
-\end{itemize}
-
-
-
-\section*{\textcolor{techblue}{Online Profiles}}
-\begin{itemize}
-    \item LinkedIn: \textcolor{techblue}{\href{https://www.linkedin.com/in/prabesharyalnp/}{https://www.linkedin.com/in/prabesharyalnp/}}
-    \item GitHub: \textcolor{techblue}{\href{https://github.com/prabesharyal}{https://github.com/prabesharyal}}
-    \item Twitter(X): \textcolor{techblue}{\href{https://x.com/PrabeshAryalNP}{https://x.com/PrabeshAryalNP}}
-    \item Telegram: \textcolor{techblue}{\href{https://t.me/PrabeshAryalNP}{https://t.me/PrabeshAryalNP}}
-
-\end{itemize}
-
-\end{multicols}
 
 \end{document}
