@@ -1,0 +1,326 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage[T1]{fontenc} % Added for better font encoding and character support
+\usepackage{textcomp} % For escaping C++ correctly
+
+% -------------------- FONT OPTIONS --------------------
+% Sticking to default fonts as requested previously to avoid issues
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in} % Adjusted top margin slightly
+\addtolength{\textheight}{1.0in} % Keep text height adjustment
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% --- Global List Settings ---
+\setlist{nosep} % Remove extra spacing in all lists (itemize, enumerate, etc.)
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{4pt}\scshape\raggedright\large % Added slight space before section title
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% Increased space *after* section title from 5pt to 8pt
+\titlespacing*{\section}{0pt}{10pt}{8pt} % {left}{before}{after} spacing for sections
+
+% Ensure that generate pdf is machine readable/ATS parsable - Commented out due to previous errors
+% \pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+% Standard resume item bullet point (small font)
+\newcommand{\resumeItem}[1]{
+  \item \small{#1} % Removed negative vspace, rely on list settings
+}
+
+% For main entries like Education degrees, Single Publication header
+% Modified the first column to 'p{0.7\textwidth}' to allow wrapping for long titles
+\newcommand{\resumeEntryHeading}[4]{
+  \item % Entry starts with an item for spacing
+    \begin{tabular*}{0.97\textwidth}[t]{p{0.7\textwidth}@{\extracolsep{\fill}}r} % Changed 'l' to 'p{0.7\textwidth}'
+      \textbf{#1} & \small{#3} \\ % Title/Institution left, Date right (small)
+      \textit{\small#2} & \textit{\small #4} \\ % Subtitle/Role left, Location/GPA right (small+italic)
+    \end{tabular*}
+    % Removed vspace, rely on itemsep from resumeSectionListStart
+}
+
+% For Job Titles/Project Titles + Dates within a list item
+\newcommand{\resumeTitleDate}[2]{
+    % Does not start with \item itself, used within a list item structure
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r} % Title column remains 'l' as job/project titles are shorter
+      \textbf{#1} & \small{#2} \\ % Title left, Date right (small)
+    \end{tabular*}\vspace{2pt} % Add small space after title/date line before description/bullets
+}
+
+% Start/End for the main list environment within each section
+\newcommand{\resumeSectionListStart}{\begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, partopsep=0pt, itemsep=10pt]} % Increased itemsep
+\newcommand{\resumeSectionListEnd}{\end{itemize}}
+
+% Start/End for nested bullet points (job duties, project details)
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.25in, label=\textbullet, itemsep=2pt, topsep=2pt, parsep=0pt]\small} % Apply small, adjust itemsep/topsep
+\newcommand{\resumeItemListEnd}{\end{itemize}} % Removed negative vspace
+
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- CONTACT INFO --------------------
+\newcommand{\ContactEmail}{hire@prabe.sh}
+\newcommand{\ContactPhone}{+994-55-701-5524}
+\newcommand{\ContactTelLink}{+994557015524}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  \color{gray}\small
+  Last Updated on \today
+\end{flushright}
+\vspace{-10pt} % Pull header up slightly
+
+\begin{center}
+    \textbf{\Huge \scshape Prabesh Aryal} \\ \vspace{8pt}
+    \small
+    \faIcon{github} \href{https://github.com/prabeshAryal}{\underline{prabeshAryal}} \quad % Use \quad for spacing
+    \faIcon{code} \href{https://prabe.sh}{\underline{prabe.sh}} \quad
+    \faIcon{linkedin} \href{https://linkedin.com/in/prabesharyalnp}{\underline{prabesharyalnp}} \quad
+    \faIcon{mobile} \href{tel:\ContactTelLink}{\underline{\ContactPhone}} \quad
+    \faIcon{envelope} \href{mailto:\ContactEmail}{\underline{\ContactEmail}}
+\end{center}
+% Removed extra vspace after header
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSectionListStart
+    \resumeEntryHeading % Use the Education/Publication command
+      {Baku Engineering University, \footnotesize{Azerbaijan}} % Institution
+      {Bachelors in Computer Engineering} % Degree
+      {July 2026} % Date
+      {Current GPA: 90.12/100} % GPA/Location
+
+    \resumeEntryHeading
+      {Kathmandu Model Secondary School, \footnotesize{Nepal}} % Institution
+      {National Examinations Board} % Degree/Board
+      {December 2021} % Date
+      {GPA: 3.08/4.0} % GPA/Location
+
+    % Coursework and Awards as simple items, styled
+\item \small{
+    \textbf{Relevant Coursework:}
+    Official and Academic Communication in Azerbaijani language,
+    Principles of Entrepreneurship and Introduction to Business,
+    Engineering Economics,
+    English for Business and Academic Communication (Reading/Writing),
+    English for Business and Academic Communication (Listening/Speaking),
+    Introduction to Multiculturalism,
+    History of Azerbaijan,
+    Basics of Computer Engineering,
+    Basics of Programming (C \& C++),
+    Web Systems and Technologies,
+    English for Academic Purposes,
+    Linear Algebra and Analytical Geometry,
+    Circuit Theory,
+    Mathematical Analysis,
+    Physics,
+    Object Oriented Programming (Java),
+    Data Structures and Algorithms,
+    Computer Architecture,
+    Basics of Electronics,
+    Discrete Mathematics,
+    Operating Systems,
+    Database Systems,
+    Digital Systems,
+    Modern Programming Languages (C\# \& .NET),
+    Differential Equations,
+    Internet Technologies,
+    Computer Graphics,
+    Computer Networks,
+    Civil Defense,
+    Machine Learning,
+    Computer Modeling,
+    Computer System Security,
+    Artificial Intelligence,
+    Probability Theory and Mathematical Statistics
+} 
+   \item \small{\textbf{Awards:} Azerbaijan Government Scholarship 2022}
+  \resumeSectionListEnd
+
+% -------------------- PUBLICATIONS --------------------
+\section{Publications}
+\resumeSectionListStart
+  \resumeEntryHeading % Use the modified command that allows wrapping
+    {Algorithmic Bargaining: Usability, Challenges, and Market Implications in Dynamic Pricing Systems} % Title (like institution)
+    {\textit{Journal of Baku Engineering University (BEU)}, ISSN 2521-635X \newline % Details (like degree) - added newline
+     DOI: \href{https://mcs.beu.edu.az/server/api/articles/download/algorithmic-bargaining-a-dynamic-pricing-model-for-products-and-services-across-online-platforms_HtePN_26_05_2025.pdf}{10.30546/09090.2025.01.1090}}
+    {May 2025} % Date
+    {} % Empty 4th argument (like GPA/Location)
+    \resumeItemListStart % Start a bulleted list for the description
+      \resumeItem{Conducted research on dynamic pricing systems and interactive bidding algorithms, analyzing usability, market implications, and societal impacts. Focused on e-commerce applications and algorithmic negotiation. Explored ethical considerations, fairness, and transparency in pricing models, examining consequences for competition and consumer welfare.} % Shortened slightly for brevity
+    \resumeItemListEnd % End the description list
+\resumeSectionListEnd
+
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+\resumeSectionListStart
+
+   \item
+    \resumeTitleDate
+        {\textbf{Technical Lead \& Solutions Architect} $|$ \footnotesize\emph{Etudy Go - etudygo.com}}
+        {July 2025 -- Present}
+    \resumeItemListStart
+        \resumeItem{Architected and deployed a cloud-native student mobility platform using Google Cloud Run, Docker, and Kubernetes, optimized for millions of users.}
+        \resumeItem{Led frontend development, implementing robust form handling, authentication, and interactive session management.}
+        \resumeItem{Contributed to backend development with Java Spring Boot, resolving critical inconsistencies and integrating APIs.}
+        \resumeItem{Implemented CI/CD pipelines and managed Cloud SQL, Cloud Storage, and IAM for reliability and performance.}
+        \resumeItem{Developed a Telegram bot for system-level monitoring and error reporting to enhance real-time operational insight.}
+        \resumeItem{Directed technical strategy, framework selection, and deployment pipelines, driving alignment between business vision and technology scalability.}
+    \resumeItemListEnd
+
+    \item
+        \resumeTitleDate
+            {\textbf{Full Stack Developer} $|$ \footnotesize\emph{Hyperce.io (Remote, Nepal Primary Residence)}}
+            {Aug. 2025 -- Present}
+        \resumeItemListStart
+            \resumeItem{Work remotely for Hyperce.io, a global eCommerce solutions provider, with Nepal as my primary residence.}
+            \resumeItem{Design and implement backend algorithms and custom solutions for logistics, shipping, quick/bulk edits, etc. using Vendure.}
+            \resumeItem{Manage AWS infrastructure, including logging into EC2 instances and handling deployments, monitoring, and troubleshooting.}
+            \resumeItem{Collaborate with international teams to deliver scalable, vendure-powered e-commerce platforms and ensure robust backend operations.}
+        \resumeItemListEnd
+
+    \item
+        \resumeTitleDate
+            {\textbf{Software, DevOps \& Full-Stack Engineer} $|$ \footnotesize\emph{Freelance Developer, Founder, and Designer}}
+            {Oct. 2019 -- Sept. 2025}
+        \resumeItemListStart
+            \resumeItem{Engaged in diverse Python projects and web development, including advanced web applications, cloud computing, server management, and automation for several clients.}
+            \resumeItem{Specialized in scraping, scripting, bot and chatbot creation, and full-stack development.}
+            \resumeItem{Proficient in AI/ML, cybersecurity, and system administration, demonstrating expertise across various Python applications and solutions.}
+            \resumeItem{Handled the complete lifecycle of website development, including designing, developing, and deploying for domains like \textbf{innovative-eco-krishi.com.np}, \textbf{dri-jay-ghimire.com}, \textbf{essence-treks-nepal} and many more.}
+            \resumeItem{Gained extensive experience in full-stack development, server management, and cloud deployment, utilizing technologies like \textbf{React, Next.js, Node.js, Python, Django, FastAPI}, and integrating \textbf{CI/CD pipelines, Docker, Kubernetes, and Terraform} to streamline deployments.}
+            \resumeItem{Focused on automation, scalability, and security while delivering production-ready solutions with modern UI/UX interfaces.}
+        \resumeItemListEnd
+
+    \item
+        \resumeTitleDate
+            {\textbf{Hacker Hero} $|$ \footnotesize\emph{Content Creator}}
+            {Aug. 2016 -- July 2022}
+        \resumeItemListStart
+            \resumeItem{Specialized in video production, editing, and design.}
+            \resumeItem{Gained proficiency in Adobe Suite and honed skills in YouTube content creation.}
+            \resumeItem{Learned the intricacies of video editing, scripting, and audience engagement.}
+            \resumeItem{Achieved a significant milestone by earning my first income at the age of 19 through creating and posting video content.}
+        \resumeItemListEnd
+
+    \item
+        \resumeTitleDate
+            {\textbf{Volunteering \& Nepali Startups} $|$ \footnotesize\emph{Contributor and Volunteer}}
+            {2019 -- 2022}
+        \resumeItemListStart
+            \resumeItem{Contributed to several Nepali startups, including \textbf{Clamphook}, an EdTech platform, where I engaged in various development and organizational roles.}
+            \resumeItem{Volunteered in diverse initiatives such as \textbf{Nepal Scouts}, \textbf{Mathematics Initiatives in Nepal}, and \textbf{Students Reunion}, showcasing a strong commitment to community development and youth engagement.}
+        \resumeItemListEnd
+
+\resumeSectionListEnd
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+\resumeSectionListStart
+    \item % Start project item
+        \resumeTitleDate
+            {\textbf{Music App - Complete Music Streaming Platform} $|$ \footnotesize\emph{ASP.NET Core, SQL Server, MVC, Bootstrap}}
+            {June 2025}
+        \resumeItemListStart
+            \resumeItem{Developed a full-stack music streaming platform with ASP.NET Core, featuring music management, social interactions, and admin tools.}
+            \resumeItem{Implemented JWT \& Cookie-based authentication, role management, and RESTful APIs (50+ endpoints, 12+ DB models, 11+ API controllers).} % Escaped & and + symbols manually
+            \resumeItem{Designed a responsive frontend with MVC \& Bootstrap (30+ Razor views, 7+ MVC controllers) and single-handedly built the enterprise-level application.} % Escaped & and + symbols manually
+        \resumeItemListEnd
+
+    \item % Start project item
+        \resumeTitleDate
+            {\textbf{AI/ML Projects} $|$ \footnotesize\emph{Java, Python, TensorFlow, SQLite, YOLOv8, OpenCV, EasyOCR, Flask}}
+            {March 2024 -- Nov. 2024}
+         \resumeItemListStart
+            \resumeItem{Built a Female Health Tracker app (Java, TensorFlow, SQLite) with cycle logging, AI-period prediction, symptom tracking, and a Flask backend API.}
+            \resumeItem{Developed an AI system (Python, YOLOv8, OpenCV, EasyOCR) to detect vehicles/license plates from video, extract text, and overlay data for real-time tracking.}
+        \resumeItemListEnd
+
+    \item % Start project item
+        \resumeTitleDate
+            {\textbf{DalbhatPowerBot} $|$ \footnotesize\emph{Telegram API, Playwright, BeautifulSoup, JSON, AIOHTTP, RapidAPI}}
+            {Aug. 2022 -- Present}
+        \resumeItemListStart
+            \resumeItem{Created an automated Telegram bot for multimedia downloads, social media scraping, and Nepali utilities.}
+            \resumeItem{Integrated APIs and reverse-engineered platforms like Twitter, Reddit, TikTok, Instagram, and Facebook.}
+            \resumeItem{Enabled advanced downloading of photos, videos, and audio (up to 2GB) with yt-dlp and optimized pipelines.}
+            \resumeItem{Developed Nepali calendar, horoscope, dictionary, and stock market utilities using modular JSON storage.}
+            \resumeItem{Bypassed CAPTCHA and access restrictions to ensure 99\% uptime and fast responses.} % Escaped %
+        \resumeItemListEnd
+\resumeSectionListEnd
+
+
+% -------------------- SKILLS (Moved Down) --------------------
+\section{Skills}
+ % Using a simple itemize list for skills, adjust spacing via setlist or locally
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=3pt, topsep=0pt]
+    \item \small \textbf{Languages:} Python, C, C\texttt{++}, Java, JavaScript, C\#, PHP, HTML, CSS, SQL, jQuery, GraphQL, \LaTeX % Escaped C++, #
+    \item \small \textbf{Frameworks:} React, Redux, TypeScript, Node.js, Express.js, Material-UI, Django, Flask, D3.js
+    \item \small \textbf{Cloud \& DevOps:} Google Cloud, AWS, Docker, Digital Ocean, Alibaba Cloud, Heroku, Vercel, Kubernetes, Docker % Escaped &
+    \item \small \textbf{Design \& Animation:} Adobe XD, Figma, Photoshop, Inkscape, Canva, GIMP, Maya Animation, Blender % Escaped &
+    \item \small \textbf{Video Editing \& Effects:} Adobe After Effects, Adobe Premiere Pro % Escaped &
+    \item \small \textbf{Tools:} Git/GitHub, Unix Shell, Webpack, VS Code, IntelliJ CLion/PyCharm/IDEA, Visual Studio, Powershell, Bash
+    \item \small \textbf{AI/ML:} PyTorch, TensorFlow, scikit-learn, YOLO, Hugging Face, Seaborn, Keras, FastAPI, ML Model Deployment, Data Preprocessing, Feature Engineering, NLP, Neural Networks, Computer Vision, STT, TTS, RAG; Proficient with AI models (GPT, Claude, Gemini) \& agents (Copilot, Cursor) % Escaped &
+    \item \small \textbf{Databases:} MySQL, SQLite, PostgreSQL, Microsoft SQL Server, Oracle Database, MongoDB, Redis, Firebase, DynamoDB, Cloud Storage Buckets, BigQuery
+    \item \small \textbf{Libraries:} pandas, NumPy, Matplotlib, Selenium, OpenCV, EasyOCR
+ \end{itemize}
+
+% -------------------- LEADERSHIP & ACTIVITIES --------------------
+\section{Leadership \& Activities} % Escaped &
+\resumeSectionListStart
+    \item % Start item
+        \resumeTitleDate
+            {\textbf{International Students' Club of Baku Engineering Uni.} $|$ \footnotesize\emph{Board Member / Acting VP}}
+            {Feb. 2023 -- Present}
+         \small{Progressed from Social Media Manager (2nd Semester) to Acting VP (6th Semester), now managing all club operations with full rights. Spearheaded event organization, strategic communications, and international student guidance, fostering a dynamic and supportive community.}
+
+    \item % Start item
+        \resumeTitleDate
+            {\textbf{Class Representative/Captain} $|$ \footnotesize\emph{Horizon G.B.S. School, Kathmandu Model Secondary School}}
+            {2013 -- 2021}
+         \small{Served as the Class Representative, recognized as one of the best CRs for effective leadership, communication, and coordination between students and teachers. Managed class activities, resolved conflicts, and ensured smooth communication between the class and school administration.}
+\resumeSectionListEnd
+
+% -------------------- INTERESTS AND AWARDS --------------------
+\section{Interests} % Renamed section slightly
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=3pt, topsep=0pt] % Simple list for interests/langs/skills
+  \item \small \textbf{Technical Interests:} Physics, Quantum Science, Cryptography, Evolution, Mathematics, Geopolitics, History
+  \item \small \textbf{Languages:} Nepali (Native), English (Proficient), Hindi (Proficient), Azerbaijani (Beginner)
+  \item \small \textbf{Soft Skills:} Leadership, Communication, Problem-Solving, Teamwork, Critical Thinking, Adaptability
+\end{itemize}
+
+\end{document}
+
