@@ -48,9 +48,6 @@
 % Increased space *after* section title from 5pt to 8pt
 \titlespacing*{\section}{0pt}{8pt}{6pt} % {left}{before}{after} spacing for sections
 
-% Ensure that generate pdf is machine readable/ATS parsable - Commented out due to previous errors
-% \pdfgentounicode=1
-
 % -------------------- CUSTOM COMMANDS --------------------
 % Standard resume item bullet point (small font)
 \newcommand{\resumeItem}[1]{
@@ -84,17 +81,15 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.25in, label=\textbullet, itemsep=1pt, topsep=1pt, parsep=0pt]\small} % Apply small, adjust itemsep/topsep
 \newcommand{\resumeItemListEnd}{\end{itemize}} % Removed negative vspace
 
-
 \setlength{\footskip}{4.08003pt}
 
 % -------------------- CONTACT INFO --------------------
 \newcommand{\ContactEmail}{hi@prabe.sh}
-\newcommand{\ContactPhone}{+994-55-701-5524}
-\newcommand{\ContactTelLink}{+994557015524}
+\newcommand{\ContactPhone}{+977-9864414972}
+\newcommand{\ContactTelLink}{+9779864414972}
 
 % -------------------- START OF DOCUMENT --------------------
 \begin{document}
-
 
 % -------------------- HEADING--------------------
 \begin{flushright}
@@ -112,16 +107,15 @@
     \faIcon{mobile} \href{tel:\ContactTelLink}{\underline{\ContactPhone}} \quad
     \faIcon{envelope} \href{mailto:\ContactEmail}{\underline{\ContactEmail}}
 \end{center}
-% Removed extra vspace after header
 
 % -------------------- EDUCATION --------------------
 \section{Education}
   \resumeSectionListStart
     \resumeEntryHeading % Use the Education/Publication command
       {Baku Engineering University, \footnotesize{Azerbaijan}} % Institution
-      {Bachelors in Computer Engineering} % Degree
-      {July 2026} % Date
-      {Current GPA: 90.83/100} % GPA/Location
+      {Bachelors in Computer Engineering (Graduated)} % Degree
+      {Sept. 2022 -- July 2026} % Date
+      {GPA: 90.85/100} % GPA/Location
 
     \resumeEntryHeading
       {Kathmandu Model Secondary School, \footnotesize{Nepal}} % Institution
@@ -170,6 +164,76 @@
    \item \small{\textbf{Awards:} Azerbaijan Government Scholarship 2022}
   \resumeSectionListEnd
 
+% -------------------- CERTIFICATIONS --------------------
+\section{Certifications}
+\resumeSectionListStart
+    \item
+    \resumeTitleDate
+        {\textbf{AWS Certified Solutions Architect -- Associate (SAA-C03)} $|$ \footnotesize\emph{Amazon Web Services}}
+        {Sept. 2026 -- Sept. 2029}
+    \resumeItemListStart
+        \resumeItem{Validated technical expertise in designing secure, resilient, high-performing, and cost-optimized cloud architectures on AWS.}
+        \resumeItem{Validation Number: \texttt{b1aa68678d2242fbbeabcb3582c23a98} $|$ \href{https://cp.certmetrics.com/amazon/en/public/verify/credential/b1aa68678d2242fbbeabcb3582c23a98}{\underline{Verify Credential}}}
+    \resumeItemListEnd
+
+    \item
+    \resumeTitleDate
+        {\textbf{Google Cybersecurity Certificate} $|$ \footnotesize\emph{Google}}
+        {July 2025}
+    \resumeItemListStart
+        \resumeItem{Demonstrated hands-on competence in network security, SIEM tools, intrusion detection, Linux, SQL, and Python automation.}
+        \resumeItem{Credly Verification: \href{https://www.credly.com/badges/197d6a41-c0ef-47f8-b878-e7d9570a6924/public_url}{\underline{credly.com/badges/197d6a41-c0ef-47f8-b878-e7d9570a6924}}}
+    \resumeItemListEnd
+
+    \item
+    \resumeTitleDate
+        {\textbf{2nd Runner Up -- LumbiniX 2026 National 48-Hour Hackathon} $|$ \footnotesize\emph{Lumbini City College}}
+        {Aug. 2026}
+    \resumeItemListStart
+        \resumeItem{Built and demonstrated an end-to-end full-stack AI platform under 48-hour hackathon constraints (Team AutisticX, Certificate ID: \texttt{LXG63R9T2K}, \href{https://www.lumbinix.com/certificate}{\underline{Verify}}).}
+    \resumeItemListEnd
+
+    \item
+    \resumeTitleDate
+        {\textbf{Google Cloud Skill Badges \& Arcade (Diamond League)} $|$ \footnotesize\emph{Google Cloud Skills Boost}}
+        {2024 -- Present}
+    \resumeItemListStart
+        \resumeItem{Completed 100+ Skill Badges across Cloud Architecture, Generative AI, DevOps, Security, and BigQuery (121,850+ points; \href{https://www.skills.google/public_profiles/e53f26cb-9ca3-4cc4-9ea9-15bbbf9208ab}{\underline{Public Profile}}).}
+    \resumeItemListEnd
+
+    \item
+    \resumeTitleDate
+        {\textbf{Anthropic Certificates: Claude 101 \& AI Fluency} $|$ \footnotesize\emph{Anthropic Courses}}
+        {June 2026}
+    \resumeItemListStart
+        \resumeItem{Mastered prompt engineering, constitutional AI, and agentic workflows (AI Fluency Score: 10/10; \href{https://verify.skilljar.com/c/hypyegx93qt3}{\underline{hypyegx93qt3}}, \href{https://verify.skilljar.com/c/9woxfu7i4omo}{\underline{9woxfu7i4omo}}).}
+    \resumeItemListEnd
+
+    \item
+    \resumeTitleDate
+        {\textbf{IELTS Academic (Overall Band: 7.5)} $|$ \footnotesize\emph{British Council / IDP}}
+        {Dec. 2025}
+    \resumeItemListStart
+        \resumeItem{Listening: 8.5, Reading: 7.5, Writing: 7.0, Speaking: 7.0 (Centre AZ001, Candidate No: 502079, TRF: \texttt{25AZ502079ARYP001A}).}
+    \resumeItemListEnd
+
+    \item
+    \resumeTitleDate
+        {\textbf{EY Strategy and Corporate Finance School} $|$ \footnotesize\emph{Ernst \& Young}}
+        {Dec. 2025}
+    \resumeItemListStart
+        \resumeItem{Completed corporate strategy, financial modeling, and business valuation training.}
+    \resumeItemListEnd
+
+    \item
+    \resumeTitleDate
+        {\textbf{freeCodeCamp Information Security \& Full Stack Certifications} $|$ \footnotesize\emph{freeCodeCamp}}
+        {2023}
+    \resumeItemListStart
+        \resumeItem{Information Security Certification (HelmetJS, TCP/IP, Nmap) \& Legacy Full Stack Developer Certification.}
+    \resumeItemListEnd
+\resumeSectionListEnd
+
 % -------------------- PUBLICATIONS --------------------
 \section{Publications}
 \resumeSectionListStart
@@ -187,6 +251,15 @@
 % -------------------- EXPERIENCE --------------------
 \section{Experience}
 \resumeSectionListStart
+
+    \item
+    \resumeTitleDate
+        {\textbf{Founder \& Executive Director} $|$ \footnotesize\emph{Prabesh Technologies Pvt. Ltd. (Kathmandu, Nepal)}}
+        {July 2026 -- Present}
+    \resumeItemListStart
+        \resumeItem{Founded an incorporated technology venture focused on enterprise software solutions, cloud infrastructure, AI systems, and digital platforms.}
+        \resumeItem{Directing system architecture, engineering operations, and technical strategy across projects.}
+    \resumeItemListEnd
 
     \item
     \resumeTitleDate
@@ -221,14 +294,14 @@
 
     \item
         \resumeTitleDate
-            {\textbf{Software, DevOps \& Full-Stack Engineer} $|$ \footnotesize\emph{Freelance Developer, Founder, and Designer}}
+            {\textbf{Software, DevOps \& Full-Stack Engineer} $|$ \footnotesize\emph{Developer, Founder, and Designer}}
             {Oct. 2019 -- Present}
         \resumeItemListStart
             \resumeItem{Engaged in diverse Python projects and web development, including advanced web applications, cloud computing, server management, and automation for several clients.}
             \resumeItem{Specialized in scraping, scripting, bot and chatbot creation, and full-stack development.}
             \resumeItem{Proficient in AI/ML, cybersecurity, and system administration, demonstrating expertise across various Python applications and solutions.}
             \resumeItem{Handled the complete lifecycle of website development, including designing, developing, and deploying across 20+ domains, including platforms like \textbf{innovative-eco-krishi.com.np}, \textbf{prepielts.pro}, \textbf{gotrafinder.com}, and \textbf{salambaku.info}.}
-            \resumeItem{Gained extensive experience in full-stack development, server management, and cloud deployment, utilizing technologies like \textbf{React, Next.js, Node.js, Python, Django, FastAPI}, and integrating \textbf{CI/CD pipelines, Docker, Kubernetes, and Terraform} to streamline deployments.}
+            \resumeItem{Gained extensive experience in full-stack development and cloud deployment with \textbf{React, Next.js, Node.js, Python/Django/FastAPI}, plus \textbf{CI/CD, Docker, Kubernetes, Terraform} to streamline releases.}
             \resumeItem{Focused on automation, scalability, and security while delivering production-ready solutions with modern UI/UX interfaces.}
         \resumeItemListEnd
 
@@ -237,39 +310,37 @@
             {\textbf{WUF13 Volunteer} $|$ \footnotesize\emph{UN-Habitat, Baku, Azerbaijan}}
             {May 2026}
         \resumeItemListStart
-            \resumeItem{Completed WUF13 volunteer service as a Room Support Team Member for the 13th World Urban Forum, a global UN-Habitat event held in Baku from 17 to 22 May 2026.}
-            \resumeItem{Supported Multipurpose Room 15 operations by monitoring session readiness, event operations, guest assistance, and on-site coordination needs.}
-            \resumeItem{Helped participants, speakers, and event team members during 40 scheduled BOS Zone A volunteer hours, escalating technical or logistical issues when needed.}
+            \resumeItem{Served as a Room Support Team Member for the 13th World Urban Forum (UN-Habitat) in Baku from 17 to 22 May 2026.}
+            \resumeItem{Supported session readiness, guest assistance, and on-site coordination across 40 scheduled volunteer hours, promptly escalating technical or logistical issues.}
         \resumeItemListEnd
 
 \resumeSectionListEnd
 
-% -------------------- SKILLS (Moved Down) --------------------
+% -------------------- SKILLS --------------------
 \section{Skills}
 \vspace{2pt}
- % Using a simple itemize list for skills, adjust spacing via setlist or locally
  \begin{itemize}[leftmargin=0.15in, label={}, itemsep=3pt, topsep=3pt]
-    \item \small \textbf{Languages:} Python, C, C\texttt{++}, Java, JavaScript, C\#, PHP, HTML, CSS, SQL, jQuery, GraphQL, \LaTeX % Escaped C++, #
+    \item \small \textbf{Languages:} Python, C, C\texttt{++}, Java, JavaScript, C\#, PHP, HTML, CSS, SQL, jQuery, GraphQL, \LaTeX
     \item \small \textbf{Frameworks:} React, Redux, TypeScript, Node.js, Express.js, Material-UI, Django, Flask, D3.js
-    \item \small \textbf{Cloud \& DevOps:} Google Cloud, AWS, Docker, Digital Ocean, Alibaba Cloud, Heroku, Vercel, Kubernetes, Docker % Escaped &
-    \item \small \textbf{Design \& Animation:} Adobe XD, Figma, Photoshop, Inkscape, Canva, GIMP, Maya Animation, Blender % Escaped &
-    \item \small \textbf{Video Editing \& Effects:} Adobe After Effects, Adobe Premiere Pro % Escaped &
+    \item \small \textbf{Cloud \& DevOps:} Google Cloud, AWS, Docker, Digital Ocean, Alibaba Cloud, Heroku, Vercel, Kubernetes
+    \item \small \textbf{Design \& Animation:} Adobe XD, Figma, Photoshop, Inkscape, Canva, GIMP, Maya Animation, Blender
+    \item \small \textbf{Video Editing \& Effects:} Adobe After Effects, Adobe Premiere Pro
     \item \small \textbf{Tools:} Git/GitHub, Unix Shell, Webpack, VS Code, IntelliJ CLion/PyCharm/IDEA, Visual Studio, Powershell, Bash
-    \item \small \textbf{AI/ML:} PyTorch, TensorFlow, scikit-learn, YOLO, Hugging Face, Seaborn, Keras, FastAPI, ML Model Deployment, Data Preprocessing, Feature Engineering, NLP, Neural Networks, Computer Vision, STT, TTS, RAG; Proficient with AI models (GPT, Claude, Gemini) \& agents (Copilot, Cursor) % Escaped &
+    \item \small \textbf{AI/ML:} PyTorch, TensorFlow, scikit-learn, YOLO, Hugging Face, Seaborn, Keras, FastAPI, ML Model Deployment, Data Preprocessing, Feature Engineering, NLP, Neural Networks, Computer Vision, STT, TTS, RAG; Proficient with AI models (GPT, Claude, Gemini) \& agents (Copilot, Cursor)
     \item \small \textbf{Databases:} MySQL, SQLite, PostgreSQL, Microsoft SQL Server, Oracle Database, MongoDB, Redis, Firebase, DynamoDB, Cloud Storage Buckets, BigQuery
     \item \small \textbf{Libraries:} pandas, NumPy, Matplotlib, Selenium, OpenCV, EasyOCR
  \end{itemize}
 
 % -------------------- LEADERSHIP & ACTIVITIES --------------------
-\section{Leadership \& Activities} % Escaped &
+\section{Leadership \& Activities}
 \resumeSectionListStart
-    \item % Start item
+    \item
         \resumeTitleDate
             {\textbf{International Students' Club of Baku Engineering Uni.} $|$ \footnotesize\emph{Board Member}}
             {2022 -- 2026}
          \small{Supported club operations, event organization, strategic communications, and international student guidance, fostering a dynamic and supportive community.}
 
-    \item % Start item
+    \item
         \resumeTitleDate
             {\textbf{Class Representative/Captain} $|$ \footnotesize\emph{Horizon G.B.S. School, Kathmandu Model Secondary School}}
             {2013 -- 2021}
@@ -277,9 +348,9 @@
 \resumeSectionListEnd
 
 % -------------------- INTERESTS AND AWARDS --------------------
-\section{Interests} % Renamed section slightly
+\section{Interests}
 \vspace{2pt}
-\begin{itemize}[leftmargin=0.15in, label={}, itemsep=3pt, topsep=3pt] % Simple list for interests/langs/skills
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=3pt, topsep=3pt]
   \item \small \textbf{Technical Interests:} Physics, Quantum Science, Cryptography, Evolution, Mathematics, Geopolitics, History
   \item \small \textbf{Languages:} Nepali (Native), English (Proficient), Hindi (Proficient), Azerbaijani (Beginner)
   \item \small \textbf{Soft Skills:} Leadership, Communication, Problem-Solving, Teamwork, Critical Thinking, Adaptability
